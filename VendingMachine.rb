@@ -21,20 +21,20 @@ class VendingMachine
     @slot_money = 0
   end
 
-  # def money_case(input_number)
-  #   if 1
-  #     puts "失敗１"
-  #   # else 2
-  #   #   current_slot_money
-  #   # elsif 3
-  #   #   return_money
-  #   elsif 4
-  #     puts "終了します"
-  #     return false
-  #   else
-  #     puts "失敗"
-  #   end
-  # end
+  def money_case(input_number)
+    if 1
+      puts "失敗１"
+    else 2
+      current_slot_money
+    elsif 3
+      return_money
+    elsif 4
+      puts "終了します"
+      return false
+    else
+      puts "失敗"
+    end
+  end
 
   def beginning
     puts "自動販売機にお金を投入してください"
